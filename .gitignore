@@ -1,0 +1,8 @@
+/node_modules
+/bower_components
+/*.org
+
+.DS_Store
+/dump
+/target
+/checkouts
