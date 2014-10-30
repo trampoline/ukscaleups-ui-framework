@@ -252,7 +252,7 @@ body {
     #page-lists {
       display: none;
     }
-    #main-header, #main-footer {
+    #main-header {
       position: absolute;
       display: block;
       width: 40%;
@@ -263,12 +263,16 @@ body {
       top: 0;
     }
     #main-footer {
+        position: absolute;
+        display: block;
+        width: 100%;
+        z-index: 1000;
       bottom: 0;
       .issues {
         display: none;
       }
       .trampoline {
-        display: block;
+//        display: block;
       }
     }
     #page-title {
@@ -545,6 +549,13 @@ body {
   .issues {
     text-align: right;
     width: 25%;
+  }
+  .sponsor {
+      .tbl-cell;
+      max-width: 150px;
+      img {
+          max-width: 100px;
+      }
   }
 }
 #main-header {
