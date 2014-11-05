@@ -25,6 +25,8 @@ th {
     > tr {
       > th,
       > td {
+        font-size: @font-size-small;
+        line-height: 18px;
         padding: @table-cell-padding;
         line-height: @line-height-base;
         vertical-align: top;
@@ -32,9 +34,18 @@ th {
       }
     }
   }
+  > thead,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        background: @gray-lighter;
+        color: @gray;
+      }
+    }
+  }
   // Bottom align for column headings
   > thead > tr > th {
-    background: #F1F0EE;
     vertical-align: bottom;
     border-bottom: 1px solid @table-border-color;
     a {
@@ -80,7 +91,6 @@ th {
 .table-stats {
   width: 100%;
   margin-bottom: @line-height-computed;
-  font-family: @font-family-serif;
   // Cells
   > thead,
   > tbody,
@@ -88,18 +98,21 @@ th {
     > tr {
       > th,
       > td {
+        font-size: @font-size-small;
+        line-height: 18px;
         padding: @table-cell-padding;
-        line-height: @line-height-base;
         vertical-align: top;
         // border-top: 1px solid @table-border-color;
       }
     }
   }
-  > thead {
+  > thead,
+  > tfoot {
     > tr {
-      > th {
-        font-weight: normal;
-        font-style: italic;
+      > th,
+      > td {
+        background: @gray-lighter;
+        color: @gray;
       }
     }
   }
