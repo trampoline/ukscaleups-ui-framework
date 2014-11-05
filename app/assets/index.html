@@ -62,7 +62,7 @@
       
     </script>
   </head>
-  <body class="view-map">
+  <body class="view-lists">
     <div id="browser-support" class="modal fade">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -201,52 +201,44 @@
                 <div class="div-scroll">
                   <div class="div-fixed">
                     <div id="full-report-component">
-                      <!-- .full-report-overview-->
-                      <!--   h4 - Overview-->
-                      <!--   .table-responsive-->
-                      <!--     table.table-stats-->
-                      <!--       thead-->
-                      <!--         tr-->
-                      <!--           th &nbsp;-->
-                      <!--           th Investor-backed companies-->
-                      <!--           th Investors-->
-                      <!--           th Constituencies-->
-                      <!--           th Revenue-->
-                      <!--           th Rev. change-->
-                      <!--           th Employees-->
-                      <!--       tbody-->
-                      <!--         tr-->
-                      <!--           th-->
-                      <!--             i.icon-info(data-toggle='tooltip', data-container='body', title='Total')-->
-                      <!--             | Total-->
-                      <!--           td-->
-                      <!--             span.totals --->
-                      <!--           td-->
-                      <!--             span.totals --->
-                      <!--           td-->
-                      <!--             span.totals --->
-                      <!--           td-->
-                      <!--             span.totals --->
-                      <!--           td-->
-                      <!--             span.totals --->
-                      <!--           td-->
-                      <!--             span.totals --->
-                      <!--         tr-->
-                      <!--           th-->
-                      <!--             i.icon-info(data-toggle='tooltip', data-container='body', title='Average')-->
-                      <!--             | Average-->
-                      <!--           td-->
-                      <!--             span.averages --->
-                      <!--           td-->
-                      <!--             span.averages --->
-                      <!--           td-->
-                      <!--             span.averages --->
-                      <!--           td-->
-                      <!--             span.averages --->
-                      <!--           td-->
-                      <!--             span.averages --->
-                      <!--           td-->
-                      <!--             span.averages --->
+                      <div class="full-report-overview">
+                        <h4>- Overview</h4>
+                        <div class="table-responsive">
+                          <table class="table-stats">
+                            <thead>
+                              <tr>
+                                <th>&nbsp;</th>
+                                <th>Investor-backed companies</th>
+                                <th>Investors</th>
+                                <th>Constituencies</th>
+                                <th>Revenue</th>
+                                <th>Rev. change</th>
+                                <th>Employees</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th><i data-toggle="tooltip" data-container="body" title="Total" class="icon-info"></i>Total</th>
+                                <td><span class="totals">-</span></td>
+                                <td><span class="totals">-</span></td>
+                                <td><span class="totals">-</span></td>
+                                <td><span class="totals">-</span></td>
+                                <td><span class="totals">-</span></td>
+                                <td><span class="totals">-</span></td>
+                              </tr>
+                              <tr>
+                                <th><i data-toggle="tooltip" data-container="body" title="Average" class="icon-info"></i>Average</th>
+                                <td><span class="averages">-</span></td>
+                                <td><span class="averages">-</span></td>
+                                <td><span class="averages">-</span></td>
+                                <td><span class="averages">-</span></td>
+                                <td><span class="averages">-</span></td>
+                                <td><span class="averages">-</span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
                       <div id="full-report-charts">
                         <div class="grid">
                           <div class="tbl">
@@ -293,73 +285,108 @@
                           </table>
                         </div>
                       </div>
-                      <!-- .full-report-details-->
-                      <!--   .grid-->
-                      <!--     .tbl-->
-                      <!--       .tbl-cell.charts-->
-                      <!--         .tbl-->
-                      <!--           .tbl-row-->
-                      <!--             .tbl-cell-->
-                      <!--               .box.box-first-->
-                      <!--                 header --->
-                      <!--                 div-->
-                      <!--                   p --->
-                      <!--                   p --->
-                      <!--                   p --->
-                      <!--             .tbl-cell-->
-                      <!--               .box.box-last-->
-                      <!--                 header --->
-                      <!--                 div-->
-                      <!--                   p --->
-                      <!--                   p --->
-                      <!--           .tbl-row-->
-                      <!--             .tbl-cell-->
-                      <!--               .box.box-first-->
-                      <!--                 header --->
-                      <!--                 div-->
-                      <!--                   p --->
-                      <!--                   p --->
-                      <!--             .tbl-cell-->
-                      <!--               .box.box-last-->
-                      <!--                 header --->
-                      <!--                 div-->
-                      <!--                   p --->
-                      <!--                   p --->
-                      <!--                   p --->
-                      <!--       .tbl-cell.details-->
-                      <!--         .tbl-->
-                      <!--           .tbl-cell-->
-                      <!--             .box-->
-                      <!--               header --->
-                      <!--               div-->
-                      <!--                 ul-->
-                      <!--                   li --->
-                      <!--                   li --->
-                      <!--                   li --->
-                      <!--                   li --->
-                      <!--                 p: a(href='#') Show more...-->
-                      <!--         .tbl-->
-                      <!--           .tbl-cell-->
-                      <!--             .box-->
-                      <!--               header --->
-                      <!--               div-->
-                      <!--                 ul-->
-                      <!--                   li --->
-                      <!--                   li --->
-                      <!--                   li --->
-                      <!--                   li --->
-                      <!--                 p: a(href='#') Show more...-->
-                      <!--         .tbl-->
-                      <!--           .tbl-cell-->
-                      <!--             .box-->
-                      <!--               header --->
-                      <!--               div-->
-                      <!--                 ul-->
-                      <!--                   li --->
-                      <!--                   li --->
-                      <!--                 li --->
-                      <!--                 li --->
-                      <!--               p: a(href='#') Show more...-->
+                      <div class="full-report-details">
+                        <div class="grid">
+                          <div class="tbl">
+                            <div class="tbl-cell charts">
+                              <div class="tbl">
+                                <div class="tbl-row">
+                                  <div class="tbl-cell">
+                                    <div class="box box-first">
+                                      <header>-</header>
+                                      <div>
+                                        <p>-</p>
+                                        <p>-</p>
+                                        <p>-</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="tbl-cell">
+                                    <div class="box box-last">
+                                      <header>-</header>
+                                      <div>
+                                        <p>-</p>
+                                        <p>-</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tbl-row">
+                                  <div class="tbl-cell">
+                                    <div class="box box-first">
+                                      <header>-</header>
+                                      <div>
+                                        <p>-</p>
+                                        <p>-</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="tbl-cell">
+                                    <div class="box box-last">
+                                      <header>-</header>
+                                      <div>
+                                        <p>-</p>
+                                        <p>-</p>
+                                        <p>-</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tbl-cell details">
+                              <div class="tbl">
+                                <div class="tbl-cell">
+                                  <div class="box">
+                                    <header>-</header>
+                                    <div>
+                                      <ul>
+                                        <li>-</li>
+                                        <li>-</li>
+                                        <li>-</li>
+                                        <li>-</li>
+                                      </ul>
+                                      <p><a href="#">Show more...</a></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tbl">
+                                <div class="tbl-cell">
+                                  <div class="box">
+                                    <header>-</header>
+                                    <div>
+                                      <ul>
+                                        <li>-</li>
+                                        <li>-</li>
+                                        <li>-</li>
+                                        <li>-</li>
+                                      </ul>
+                                      <p><a href="#">Show more...</a></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tbl">
+                                <div class="tbl-cell">
+                                  <div class="box">
+                                    <header>-</header>
+                                    <div>
+                                      <ul>
+                                        <li>-</li>
+                                        <li>-</li>
+                                      </ul>
+                                      <li>-</li>
+                                      <li>-</li>
+                                    </div>
+                                    <p><a href="#">Show more...</a></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
