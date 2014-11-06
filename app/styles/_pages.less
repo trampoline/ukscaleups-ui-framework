@@ -306,7 +306,7 @@ body {
   background: @gray-dark;
   .inner {
     .clearfix;
-    padding: 15px 20px;
+    padding: 0 20px;
   }
   h1 {
     .text-hide;
@@ -318,7 +318,29 @@ body {
     width: 192px;
     height: 35px;
     float: left;
+    margin: 15px 0;
+  }
+  ul {
+    float: right;
+    list-style: none;
     margin: 0;
+    padding: 0;
+    li, a {
+      float: left;
+      display: block;
+    }
+    a {
+      line-height: ;
+      border-top: 7px solid transparent;
+      color: #fff;
+      line-height: 51px;
+      padding: 0 10px 7px;
+      &:hover, &.active {
+        border-color: @brand-primary;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
   }
 }
 
