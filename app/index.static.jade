@@ -20,7 +20,6 @@ html(lang='en')
 
     meta(name='author', content='Trampoline Systems Ltd')
 
-    link(type='text/css', rel='stylesheet', href="http://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css")
     link(type='text/css', rel='stylesheet', href='/css/app.css')
 
     script(type="text/javascript" src="/js/polyfills.js")
@@ -49,7 +48,6 @@ html(lang='en')
         }
       });
 
-    script(type='text/javascript', src='http://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js')
     script(type='text/javascript', src='/js/vendor.js')
     script(type='text/javascript', src='http://fb.me/react-0.9.0.js')
 
@@ -118,7 +116,7 @@ html(lang='en')
               Methodology
           .modal-body
             p.
-              We take registry data from many European countries.
+
 
     #wrap
       header#page-header
@@ -131,107 +129,25 @@ html(lang='en')
       section#page-intro
         .inner
           .col
-            h1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tenetur magnam, odit reprehenderit quam animi, enim.
+            h1
+              | Cambridge 50 was put together by Cambridge business and academic community to support the economic
+              | growth in Cambridge by making it easy and transparent to identify our fastest growing companies and
+              | who you know in them so it is easier for you to invest, work or partner with us.
           .col
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tenetur magnam, odit reprehenderit quam animi, enim, quasi modi atque mollitia, cumque iusto velit recusandae ducimus incidunt consequatur cum facere ad.
-
-      aside#nav
-        ul
-          li.search(data-toggle='tooltip' data-placement='right' title='Filter'): a(href='#') Search
-          li.map.active(data-toggle='tooltip' data-placement='right' title='View on map'): a(href='#') Map
-          li.lists(data-toggle='tooltip' data-placement='right' title='View full report'): a(href='#') Full Report
-          li.info(data-toggle='tooltip' data-placement='right' title='More Information')
-            a(data-toggle='modal' data-target='#page-info') Info
-          li.method(data-toggle='tooltip' data-placement='right' title='Methodology')
-            a(data-toggle='modal' data-target='#page-methodology') Methodology
-          li.logo: a(href='#') #
+            p
+              | Here you can find our most innovative companies, as defined by the number of customer orders they
+              | receive and the by number of people they employ.
+            p
+              | All of them are growing at least 20% per annum and you can also sort this by life sciences,
+              | physical sciences, wireless and clean tech sectors if you are in those sectors.  You can also, at a
+              | glance see how many  companies already have reached revenues of &pound; 1Million, 10 M, 25M, 100M, 250M, 500M
+              | and a Billion.
 
       section#main
         .container
           header#main-header
-            #search
-              #search-component
-                div.tbl
-                  div.tbl-cell(style='width: 100%')
-                    input(type='text', placeholder='Search')
-                  //- NEW: width increased
-                  div.tbl-cell(style='width: 38px')
-                    button(type='reset').btn-clear &times;
-
-                  //- NEW: Button moved below to "header.secondary"
-                  //- div.tbl-cell(style='width: 136px')
-                  //-   button(type='reset').btn-reset Reset to UK wide
-
-                #search-results.hide
-                  ul
-                    li
-                      a(href='#')
-                        | -
-                        small Constituency
-                    li
-                      a(href='#')
-                        | -
-                        small Investor
-                    li
-                      a(href='#')
-                        | -
-                        small Investor-backed company
-              #tag-filter-component
-              .tbl
-                .tbl-row
-                  .tbl-cell
-                    h3 Shading
-                  .tbl-cell
-              #variable-selection-component
-              #stat-selection-component
-              #scale-selection-component
-              #color-scale-component
-          #page-title-component
-            #page-title
-              button(type='button').btn View on map
-              // button(type='reset').btn.btn-link.btn-reset Reset to UK wide
-              h2 -
-              h3 -
 
           #main-content
-
-            #page-map
-              #map-report.open
-                a(href='#')
-                  i Show / hide
-
-                aside
-                  header.primary
-                    //begin-static-app-name
-                    h1 Clustermap
-                    //end-static-app-name
-                    //app-name
-                      <h1>{{{app-name}}}</h1>
-                    h2 -
-
-                  #map-report-component
-                    header.secondary
-                      h2 -
-                      h3 -
-                      // button(type='reset').btn-reset Reset to UK wide
-
-                    ul
-                      li
-                        | -
-                        small Companies
-                      li
-                        | -
-                        small Total revenue
-                      li
-                        | -
-                        small Total employees
-
-                    a(href='#')
-                      button(type='button').btn
-                        i.icon-lists-sm
-                        | Full report
-
-              #map-component
 
             #page-lists
               .inner
@@ -403,16 +319,10 @@ html(lang='en')
             .inner
               .trampoline
                 p
-                  // | Produced by&nbsp;
-                  a(href='http://www.grantthornton.com/') Grant Thornton
-                  | &nbsp;and&nbsp;
+                  | Data and analytics by&nbsp;
                   a(href='http://www.trampolinesystems.com/') Trampoline Systems
                 p
-                  a(href='mailto:clustermap-issues@trampolinesystems.com?subject=EU Startup Data issue report') Report issue
-              //   p
-              //     a(href='#') Terms
-              // .issues
-              #geo-sponsors
+                  a(href='mailto:clustermap-issues@trampolinesystems.com?subject=Cabmridge 50 issue report') Report issue
 
     //begin-static-base-js
     <!-- script(type="text/javascript", src="cljs/goog/base.js") -->
