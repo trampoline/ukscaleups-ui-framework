@@ -123,8 +123,8 @@ html(lang='en')
         .inner
           h1 Top 50
           ul
-            li: a(href="#") Rankings
-            li: a(href="#") Charts
+            // li: a(href="#") Rankings
+            // li: a(href="#") Charts
 
       section#page-intro
         .inner
@@ -156,8 +156,9 @@ html(lang='en')
 
                     #full-report-component
                       .full-report-overview
-                        h4 Cambridge 50 Growth Rankings
+                        h2 Top 50
 
+                      // #revenue-bands-table
                       //   .table-responsive
                       //     table.table-stats
                       //       thead
@@ -202,6 +203,7 @@ html(lang='en')
                       //             span.averages -
                       //           td
                       //             span.averages -
+
                       // #full-report-charts
                       //   .grid
                       //     .tbl
@@ -214,38 +216,39 @@ html(lang='en')
                       //                 #turnover-timeline
 
                       #rankings-table
-                        .table-responsive
-                          table.table
-                            thead
-                              tr
-                                th Investor-backed company
-                                th Postcode
-                                th Investor
-                                th Revenue
-                                th Rev. change
-                                th Employess
-                                th Emp. change
-                            tbody
-                              - var i = 1;
-                              - while(i--)
-                                tr
-                                  td
-                                    a(href='#') -
-                                  td -
-                                  td
-                                    a(href='#') -
-                                  td
-                                    | -
-                                    small &nbsp;(-)
-                                  td
-                                    | -
-                                    i.icon-negative
-                                  td
-                                    | -
-                                    small &nbsp;(-)
-                                  td
-                                    | -
-                                    i.icon-positive
+                        // .table-responsive
+                        //   table.table
+                        //     thead
+                        //       tr
+                        //         th Investor-backed company
+                        //         th Postcode
+                        //         th Investor
+                        //         th Revenue
+                        //         th Rev. change
+                        //         th Employess
+                        //         th Emp. change
+                        //     tbody
+                        //       - var i = 1;
+                        //       - while(i--)
+                        //         tr
+                        //           td
+                        //             a(href='#') -
+                        //           td -
+                        //           td
+                        //             a(href='#') -
+                        //           td
+                        //             | -
+                        //             small &nbsp;(-)
+                        //           td
+                        //             | -
+                        //             i.icon-negative
+                        //           td
+                        //             | -
+                        //             small &nbsp;(-)
+                        //           td
+                        //             | -
+                        //             i.icon-positive
+
                       // .full-report-details
                       //   .grid
                       //     .tbl
