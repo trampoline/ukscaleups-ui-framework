@@ -348,15 +348,45 @@ body {
   background: @brand-primary;
   .inner {
     .clearfix;
+    padding: 50px 0 38px;
   }
   .col {
     float: left;
-    padding: 50px 20px;
+    padding: 0 20px;
     width: 50%;
   }
   h1 {
     font-family: @font-family-serif;
     font-weight: normal;
+    font-size: 24px;
+    line-height: 1.25;
+  }
+  @media (max-width: 768px) {
+    .inner {
+      padding: 30px 0 18px;
+    }
+    .col {
+      float: none;
+      padding: 0 20px;
+      width: auto;
+    }
+  }
+}
+
+#rankings-table {
+  table {
+    thead {
+      tr {
+        th {
+          padding: 2px 8px;
+        }
+        &:first-child {
+          th {
+            border: 0 none;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -466,7 +496,7 @@ body {
   height: 100%;
   *height: auto;
   .inner {
-    padding: 20px 0 20px 20px;
+    padding: 20px;
     height: 100%;
     *height: auto;
   }
