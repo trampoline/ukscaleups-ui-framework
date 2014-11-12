@@ -20,6 +20,7 @@ html(lang='en')
 
     meta(name='author', content='Trampoline Systems Ltd')
 
+    link(type='text/css', rel='stylesheet', href="http://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css")
     link(type='text/css', rel='stylesheet', href='/css/app.css')
 
     script(type="text/javascript" src="/js/polyfills.js")
@@ -48,6 +49,7 @@ html(lang='en')
         }
       });
 
+    script(type='text/javascript', src='http://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js')
     script(type='text/javascript', src='/js/vendor.js')
     script(type='text/javascript', src='http://fb.me/react-0.9.0.js')
 
@@ -69,7 +71,7 @@ html(lang='en')
         ga('send', 'pageview');
       }
 
-  body.view-lists
+  body.view-map
 
     #browser-support.modal.fade
       .modal-dialog
@@ -122,9 +124,9 @@ html(lang='en')
       header#page-header
         .inner
           h1 Top 50
-          ul
-            // li: a(href="#") Rankings
-            // li: a(href="#") Charts
+          ul.nav-links
+            li: a.map.active(href="#") Map
+            li: a.lists(href="#") Top 50
 
       section#page-intro
         .inner
@@ -148,6 +150,44 @@ html(lang='en')
           header#main-header
 
           #main-content
+
+            #page-map
+              #map-report.open
+                a(href='#')
+                  i Show / hide
+
+                aside
+                  header.primary
+                    //begin-static-app-name
+                    h1 Clustermap
+                    //end-static-app-name
+                    //app-name
+                      <h1>{{{app-name}}}</h1>
+                    h2 -
+
+                  #map-report-component
+                    header.secondary
+                      h2 -
+                      h3 -
+                      // button(type='reset').btn-reset Reset to UK wide
+
+                    ul
+                      li
+                        | -
+                        small Companies
+                      li
+                        | -
+                        small Total revenue
+                      li
+                        | -
+                        small Total employees
+
+                    a(href='#')
+                      button(type='button').btn
+                        i.icon-lists-sm
+                        | Full report
+
+              #map-component
 
             #page-lists
               .inner

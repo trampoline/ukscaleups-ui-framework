@@ -20,6 +20,7 @@
     
     -->
     <meta name="author" content="Trampoline Systems Ltd">
+    <link type="text/css" rel="stylesheet" href="http://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css">
     <link type="text/css" rel="stylesheet" href="/css/app.css">
     <script type="text/javascript" src="/js/polyfills.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script><!--[if lte IE 7]>
@@ -38,6 +39,7 @@
       });
       
     </script>
+    <script type="text/javascript" src="http://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js"></script>
     <script type="text/javascript" src="/js/vendor.js"></script>
     <script type="text/javascript" src="http://fb.me/react-0.9.0.js"></script>
     <!--begin-static-app-config-->
@@ -60,7 +62,7 @@
       
     </script>
   </head>
-  <body class="view-lists">
+  <body class="view-map">
     <div id="browser-support" class="modal fade">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -114,9 +116,9 @@
       <header id="page-header">
         <div class="inner">
           <h1>Top 50</h1>
-          <ul>
-            <!-- li: a(href="#") Rankings-->
-            <!-- li: a(href="#") Charts-->
+          <ul class="nav-links">
+            <li><a href="#" class="map active">Map</a></li>
+            <li><a href="#" class="lists">Top 50</a></li>
           </ul>
         </div>
       </header>
@@ -145,6 +147,34 @@
         <div class="container">
           <header id="main-header"></header>
           <div id="main-content">
+            <div id="page-map">
+              <div id="map-report" class="open"><a href="#"><i>Show / hide</i></a>
+                <aside>
+                  <header class="primary">
+                    <!--begin-static-app-name-->
+                    <h1>Clustermap</h1>
+                    <!--end-static-app-name-->
+                    <!--app-name<h1>{{{app-name}}}</h1>
+                    -->
+                    <h2>-</h2>
+                  </header>
+                  <div id="map-report-component">
+                    <header class="secondary">
+                      <h2>-</h2>
+                      <h3>-</h3>
+                      <!-- button(type='reset').btn-reset Reset to UK wide-->
+                    </header>
+                    <ul>
+                      <li>-<small>Companies</small></li>
+                      <li>-<small>Total revenue</small></li>
+                      <li>-<small>Total employees</small></li>
+                    </ul><a href="#">
+                      <button type="button" class="btn"><i class="icon-lists-sm"></i>Full report</button></a>
+                  </div>
+                </aside>
+              </div>
+              <div id="map-component"></div>
+            </div>
             <div id="page-lists">
               <div class="inner">
                 <div class="div-scroll">
