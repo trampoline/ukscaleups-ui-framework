@@ -10,18 +10,19 @@
 }
 
 @font-face {
-  font-family: 'PT Sans Bold';
+  font-family: 'Open Sans Bold';
   font-style: normal;
   font-weight: 700;
-  src: local('PT Sans Bold'), local('PTSans-Bold'), url(http://fonts.gstatic.com/s/ptsans/v8/0XxGQsSc1g4rdRdjJKZrNL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
 }
 
 @font-face {
-  font-family: 'PT Serif Bold';
+  font-family: 'Open Sans Extrabold';
   font-style: normal;
-  font-weight: 700;
-  src: local('PT Serif Bold'), local('PTSerif-Bold'), url(http://fonts.gstatic.com/s/ptserif/v8/QABk9IxT-LFTJ_dQzv7xpLrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+  font-weight: 800;
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(http://fonts.gstatic.com/s/opensans/v10/EInbV5DfGHOiMmvb1Xr-hqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
 }
+
 
 // Global values
 // --------------------------------------------------
@@ -29,16 +30,16 @@
 // Grays
 // -------------------------
 
-@gray-darker:            lighten(#000, 13.5%); // #222
-@gray-dark:              lighten(#000, 20%);   // #333
-@gray:                   lighten(#000, 33.5%); // #555
-@gray-light:             lighten(#000, 60%);   // #999
-@gray-lighter:           lighten(#000, 93.5%); // #eee
+@gray-darker:            #222020;
+@gray-dark:              #333;
+@gray:                   #555;
+@gray-light:             #777;
+@gray-lighter:           #eee;
 
 // Brand colors
 // -------------------------
 
-@brand-primary:         #FF9738;
+@brand-primary:         #b60011;
 
 @brand-success:         #5cb85c;
 @brand-warning:         #f0ad4e;
@@ -54,14 +55,14 @@
 // Links
 // -------------------------
 
-@link-color:            #0088CC;
-@link-hover-color:      #005580;
+@link-color:            #b60011;
+@link-hover-color:      #92000e;
 
 // Typography
 // -------------------------
 
 @font-family-sans-serif:  "PT Sans", Arial, sans-serif;
-@font-family-serif:       "PT Serif", Georgia, serif;
+@font-family-serif:       Georgia, serif;
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
@@ -79,9 +80,9 @@
 @line-height-base:        24px;
 @line-height-computed:    24px;
 
-@headings-font-family:    "PT Sans Bold", Arial, sans-serif;
+@headings-font-family:    "Open Sans Bold", Arial, sans-serif;
 @headings-font-weight:    700;
-@headings-line-height:    1;
+@headings-line-height:    1.25;
 @headings-color:          inherit;
 
 

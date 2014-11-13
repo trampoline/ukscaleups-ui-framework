@@ -1,8 +1,8 @@
 //
-// BVCA
+// ClusterMap
 // --------------------------------------------------
 
-// BVCA Variables
+// Variables
 // -------------------------
 @asideSize: 48px;
 @asideSizeLg: 64px;
@@ -13,8 +13,15 @@
 @mapSpriteSVGPath: '../img/map-sprite.svg';
 @mapSpritePNGPath: '../img/map-sprite.png';
 
-// BVCA Mixins
+// Mixins
 // -------------------------
+.background-cover() {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .image-text() {
   overflow: hidden;
   text-indent: 100%;
@@ -311,7 +318,8 @@ body {
 
 
 #page-header {
-  background: @gray-dark;
+  background: #fff;
+  border-bottom: 1px solid @gray-lighter;
   .inner {
     .clearfix;
     padding: 0 20px;
@@ -326,7 +334,7 @@ body {
     width: 192px;
     height: 35px;
     float: left;
-    margin: 15px 0;
+    margin: 15px 0 14px;
   }
   ul {
     float: right;
@@ -340,12 +348,12 @@ body {
     a {
       line-height: ;
       border-top: 7px solid transparent;
-      color: #fff;
-      line-height: 51px;
+      color: @gray-darker;
+      line-height: 50px;
       padding: 0 10px 7px;
       &:hover, &.active {
         border-color: @brand-primary;
-        color: #fff;
+        color: @gray-darker;
         text-decoration: none;
       }
     }
@@ -353,7 +361,11 @@ body {
 }
 
 #page-intro {
-  background: @brand-primary;
+  // background: @brand-primary;
+  background: #463F37 url('../img/intro-bg.jpg') 50% 0 no-repeat;
+  .background-cover();
+  color: #fff;
+
   .inner {
     .clearfix;
     padding: 50px 0 38px;
@@ -364,8 +376,8 @@ body {
     width: 50%;
   }
   h1 {
-    font-family: @font-family-serif;
-    font-weight: normal;
+    font-family: "Open Sans Extrabold", Arial, sans-serif;;
+    font-weight: 800;
     // font-size: 24px;
     line-height: 1.25;
   }
@@ -499,12 +511,12 @@ body {
   }
   li {
     border-top: 1px solid @gray-lighter;
-    font-size: 285.714285714286%;
+    // font-size: 285.714285714286%;
     line-height: 1;
-    font-family: @font-family-serif;
+    // font-family: @font-family-serif;
     padding: 5px 20px;
     small {
-      font-size: 35%;
+      // font-size: 35%;
       font-style: italic;
       line-height: 1;
       display: block;
