@@ -219,32 +219,40 @@ html, body {
   max-height: 100%;
 }
 
+@footer-height: 112px;
 
 body {
   #page-map, #page-lists {
     height: 100%;
     position: relative;
-    *height: auto;
-    *width: 100%;
-    // *position: static;
   }
 
-  #page-map {
-    background: #72B6E8;
-    overflow: hidden;
-  }
   &.view-map {
-    #wrap, #main > .container, #main-content {
-      *height: 100% !important;
-      width: auto;
-      display: block;
+    padding-bottom: @footer-height;
+    #wrap {
+      .tbl;
     }
+    #page-header, #main {
+      .tbl-row;
+    }
+    #main {
+      height: 100%;
+    }
+
+    #page-header > .inner, #main > .container {
+      .tbl-cell;
+    }
+
+    #page-intro {
+      display: none;
+    }
+
     #page-map {
-      display: block;
-      *height: 100%;
+      background: #72B6E8;
+      overflow: hidden;
+      min-height: 500px;
       #map-component {
-          // height: 100%;
-          height: 500px;
+        height: 100%;
         .map {
           height: 100%;
         }
@@ -264,11 +272,13 @@ body {
       top: 0;
     }
     #main-footer {
-        position: absolute;
-        display: block;
-        width: 100%;
-        z-index: 1000;
+      position: absolute;
+      display: block;
+      width: 100%;
+      z-index: 1000;
       bottom: 0;
+      height: @footer-height;
+      overflow: hidden;
       .issues {
         display: none;
       }
@@ -299,9 +309,6 @@ body {
   }
 }
 
-
-#wrap {
-}
 
 #page-header {
   background: @gray-dark;
