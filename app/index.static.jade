@@ -126,25 +126,34 @@ html(lang='en')
           h1 Top 50
           ul.nav-links
             li: a.map.active(href="#") Map
-            li: a.lists(href="#") Top 50
+            li: a.lists(href="#") Top 50 Report
 
       section#page-intro
         .inner
           .col
             h1
-              | Cambridge 50 tracks the fastest-growing companies in the Cambridge cluster
+              | Data, visualisation and analysis showcasing Britain&#8217;s high growth companies
+            a(href="/#/map")
+              button(type='button').btn Map
           .col
             p
-              | Cambridge 50 was put together by Cambridge businesses and the academic community to
-              | support economic growth in the Cambridge cluster. The site makes it easy and transparent
-              | to identify the fastest growing companies and find contacts to invest, work or partner with them.
+              | This site was created by growth data specialists&nbsp;
+              a(href="http://www.trampolinesystems.com") Trampoline Systems
+              | &nbsp;to highlight the fastest-growing businesses across the UK as an
+              | accompaniment to the&nbsp;
+              a(href="http://www.scaleupreport.org") Scale-up Report.
 
             p
-              | All the companies listed have grown by at least 20% per annum over two successive years,
-              |  measured by their revenue or the number of people they employ. You can sort them by sector
-              | to see which industries are growing the fastest. You can also see how many companies in
-              | Cambridge are already generating revenues of &pound;1 million, &pound;10 million, &pound;25 million, &pound;50 million,
-              | &pound;100 million and &pound;250 million.
+              | The analysis covers every company in the UK and follows the OECD definition of&nbsp;
+              i high growth.
+              | &nbsp;This requires a minimum of 20% growth in either revenue or employment over two
+              | successive years.
+
+            p
+              | The map shows where high growth businesses are located around the UK. Zoom in to
+              | see the individual companies. The Top 50 shows a league table of the fastest-growing
+              | companies linking to further details.
+
       section#main
         .container
           header#main-header
@@ -158,34 +167,29 @@ html(lang='en')
 
                 aside
                   header.primary
-                    //begin-static-app-name
-                    h1 Clustermap
-                    //end-static-app-name
-                    //app-name
-                      <h1>{{{app-name}}}</h1>
-                    h2 -
+                    h1 Britain&#8217;s high growth companies visualised
+                    h2 by Trampoline Systems
 
                   #map-report-component
-                    header.secondary
-                      h2 -
-                      h3 -
-                      // button(type='reset').btn-reset Reset to UK wide
+                    // header.secondary
+                    //   h2 -
+                    //   h3 -
+                    //   // button(type='reset').btn-reset Reset to UK wide
 
-                    ul
-                      li
-                        | -
-                        small Companies
-                      li
-                        | -
-                        small Total revenue
-                      li
-                        | -
-                        small Total employees
+                    // ul
+                    //   li
+                    //     | -
+                    //     small Companies
+                    //   li
+                    //     | -
+                    //     small Total revenue
+                    //   li
+                    //     | -
+                    //     small Total employees
 
-                    a(href='#')
-                      button(type='button').btn
-                        i.icon-lists-sm
-                        | Full report
+                  a(href='/#/lists')
+                    button(type='button').btn
+                      | Top 50 Report
 
               #map-component
 
