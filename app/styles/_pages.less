@@ -238,6 +238,7 @@ body {
 
   &.view-map {
     min-height: 600px;
+    padding-bottom: @footer-height;
     #wrap {
       .tbl;
     }
@@ -253,7 +254,7 @@ body {
     }
 
     #main > .container {
-      padding-bottom: @footer-height;
+      height: 100%;
     }
 
     #page-intro {
@@ -286,6 +287,8 @@ body {
       z-index: 1000;
       height: @footer-height;
       overflow: hidden;
+      position: absolute;
+      width: 100%;
       .issues {
         display: none;
       }
