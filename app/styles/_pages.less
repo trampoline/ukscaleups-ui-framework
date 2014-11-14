@@ -228,7 +228,7 @@ html, body {
   max-height: 100%;
 }
 
-@footer-height: 60px;
+@footer-height: 50px;
 
 body {
   #page-map, #page-lists {
@@ -386,6 +386,10 @@ body {
     // font-size: 24px;
     line-height: 1.25;
   }
+  a, a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
   @media (max-width: 768px) {
     .inner {
       padding: 30px 0 18px;
@@ -400,11 +404,13 @@ body {
 
 #revenue-bands-table, #scaleup-factor-table {
   table {
-    > tr {
-      > th {
-        width: 14%;
-        &.col-1 {
-          width: 16%;
+    > thead {
+      > tr {
+        > th {
+          width: 14%;
+          &.col-1 {
+            width: 16%;
+          }
         }
       }
     }
@@ -413,10 +419,12 @@ body {
 
 #scaleup-factor-table {
   table {
-    > tr {
-      > th {
-        &.col-4 {
-          width: 56%; // 14% * 4
+    > thead {
+      > tr {
+        > th {
+          &.col-4 {
+            width: 56%; // 14% * 4
+          }
         }
       }
     }
@@ -470,7 +478,7 @@ body {
     margin-bottom: 20px;
   }
   h1 {
-    font: bold @font-size-base/@line-height-base @font-family-sans-serif;
+    .h2;
   }
   h2 {
     color: @gray-light;
@@ -520,7 +528,7 @@ body {
     }
   }
   header.secondary {
-    margin: 0 -20px;
+    margin: 20px -20px 0;
     background: @gray-lighter;
     padding: 10px 20px;
     h2 {
@@ -566,7 +574,7 @@ body {
 }
 
 #map-report-component, #color-scale-component {
-  margin: 20px 0;
+  margin: 0 0 20px;
 }
 
 #main-content {
@@ -579,13 +587,13 @@ body {
     *height: auto;
   }
 }
-// #main-header, #main-footer {
-//   width: 100%;
-// }
+
 #main-footer {
   background: @gray-lighter;
   .inner {
-    padding: 20px;
+    padding: 15px 20px;
+  }
+  .trampoline {
     .clearfix;
   }
   p {
