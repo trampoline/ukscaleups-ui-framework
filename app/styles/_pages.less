@@ -228,7 +228,7 @@ html, body {
   max-height: 100%;
 }
 
-@footer-height: 112px;
+@footer-height: 60px;
 
 body {
   #page-map, #page-lists {
@@ -562,6 +562,10 @@ body {
   }
 }
 
+#map-report-component, #color-scale-component {
+  margin: 20px 0;
+}
+
 #main-content {
   height: 100%;
   *height: auto;
@@ -579,6 +583,17 @@ body {
   background: @gray-lighter;
   .inner {
     padding: 20px;
+    .clearfix;
+  }
+  p {
+    float: left;
+    margin-left: 40px;
+    margin-bottom: 0;
+    font-size: @font-size-small;
+    line-height: 20px;
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
 
