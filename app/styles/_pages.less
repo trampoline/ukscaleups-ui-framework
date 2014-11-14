@@ -13,6 +13,8 @@
 @mapSpriteSVGPath: '../img/map-sprite.svg';
 @mapSpritePNGPath: '../img/map-sprite.png';
 
+@standard-border-color: #D9D8D7;
+
 // Mixins
 // -------------------------
 .background-cover() {
@@ -44,7 +46,7 @@
   position: relative;
   vertical-align: middle;
   .button-size(6px; 16px; 16px; 20px; 0);
-  // #gradient > .vertical(@brand-primary, darken(@brand-primary, 10%), 0%, 50%);
+  #gradient > .vertical(@brand-primary, darken(@brand-primary, 5%), 0%, 100%);
   &:focus {
     .tab-focus();
     top: 1px;
@@ -317,7 +319,7 @@ body {
 
 #page-header {
   background: #fff;
-  border-bottom: 1px solid #D9D8D7;
+  border-bottom: 1px solid @standard-border-color;
   .box-shadow(-2px 2px 2px rgba(0,0,0,.15));
   z-index: 20;
   .inner {
@@ -461,11 +463,18 @@ body {
   right: 0px; // -@map-details-size;
   width: @map-details-size + @map-arrow-size;
   z-index: 1000;
+  h1 {
+    font: bold @font-size-base/@line-height-base @font-family-sans-serif;
+  }
+  h2 {
+    color: @gray-light;
+    font: bold @font-size-small/@line-height-base @font-family-sans-serif;
+  }
   > a {
     display: block;
     float: left;
     background: @gray-lighter;
-    border: 1px solid #D9D8D7;
+    border: 1px solid @standard-border-color;
     border-right: 0 none;
     border-top: 0 none;
     .square(@map-arrow-size);
@@ -486,7 +495,7 @@ body {
   }
   > aside {
     background: @gray-lighter;
-    border: 1px solid #D9D8D7;
+    border: 1px solid @standard-border-color;
     border-top: 0 none;
     padding: 10px 20px;
     margin-left: @map-arrow-size;
@@ -529,16 +538,16 @@ body {
     margin: 0 -20px 10px;
   }
   li {
-    border-top: 1px solid @gray-lighter;
-    // font-size: 285.714285714286%;
+    border-top: 1px solid @standard-border-color;
     line-height: 1;
-    // font-family: @font-family-serif;
     padding: 5px 20px;
+    span {
+      font-size: 3em;
+    }
     small {
-      // font-size: 35%;
-      font-style: italic;
-      line-height: 1;
+      color: @gray-light;
       display: block;
+      line-height: 1;
       margin-top: 5px;
     }
     &:first-child {
